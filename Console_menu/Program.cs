@@ -24,6 +24,12 @@
 
                 switch (userCommand)
                 {
+                    default:
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine($"Команда \"{userCommand}\" не известна");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        break;
+
                     case CommandWriteHello:
                         Console.WriteLine("Привет");
                         break;
